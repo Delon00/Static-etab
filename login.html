@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="login">
+        <form id="loginForm" class="login-form">
+            <h1>Mon Etab</h1>
+            <label for="identifiant">Identifiant</label>
+            <input type="text" name="identifiant" id="identifiant" placeholder="Entrez votre identifiant">
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" placeholder="********">
+            <button type="button" class="login-btn" onclick="login()">Connexion</button>
+            <p id="error-message"></p>
+        </form>
+    </section>
+    <script src="js.js"></script>
+</body>
+</html>

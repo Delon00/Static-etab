@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="dashboard">
+        <div class="sidebar">
+            <div>
+                <h1>Mon Etab</h1>
+                <hr>
+                <ul class="sidebar-link-container">
+                    <li><a class="sidebar-link current" href="#page-dash" onclick="showSection(event, 'page-dash')">Tableau de bord</a></li>
+                    <li><a class="sidebar-link" href="#page-eleve" onclick="showSection(event, 'page-eleve')">Élèves</a></li>
+                    <li><a class="sidebar-link" href="#page-professeur" onclick="showSection(event, 'page-professeur')">Professeur</a></li>
+                    <li><a class="sidebar-link" href="#page-utilisateur" onclick="showSection(event, 'page-utilisateur')">Utilisateur</a></li>
+                    <li><a class="sidebar-link" href="#page-rapport" onclick="showSection(event, 'page-rapport')">Rapport</a></li>
+                </ul>
+            </div>
+            <div>
+                <hr>
+                <a class="sidebar-link" href="#deconnexion" onclick="showSection(event, 'deconnexion')">Deconnexion</a>
+            </div>
+        </div>
+        <div class="page-dash" id="page-dash">
+            <h1>Tableau de bord</h1>
+            <div class="card-container">
+                <div class="card"><h5>Nombre d'éleve</h5><h1>128 100</h1></div>
+                <div class="card"><h5>Nombre de professeur</h5><h1>128 100</h1></div>
+                <div class="card"><h5>Nombre de utilisateur</h5><h1>128 100</h1></div>
+                <div class="card"><h5>Eleve par genre</h5>
+                    <div class="circle-container">
+                        <div class="cercle">
+                        </div><ul><li>Homme</li><li>Femme</li></ul></div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------- Élèves -->
+        <div class="eleve" id="page-eleve">
+            <div class="board-top">
+                <h1>Élèves <span>(2)</span></h1>
+                <div class="flex"><div class="plus">+</div>Nouvel élève</div>
+            </div>
+            <div class="tableau">
+                <div class="title row">
+                    <p>Nom</p>
+                    <p>Prénom</p>
+                    <p>Genre</p>
+                    <p>Classe</p>
+                    <p>Matricule</p>
+                    <p>Age</p>
+                    <p>Téléphone</p>
+                    <p>Ville</p>
+                    <p class="action">Actions</p>
+                </div>
+                <div class="row">
+                    <p>KOFFI</p>
+                    <p>George</p>
+                    <p>M</p>
+                    <p>Tle</p>
+                    <p>GDJ7GDGD</p>
+                    <p>17</p>
+                    <p>0123456789</p>
+                    <p>Bonoua</p>
+                    <button type="button">Modifier</button>
+                    <button type="button">Supprimer</button>
+                </div>
+                <div class="row">
+                    <p>Konaté</p>
+                    <p>Sali</p>
+                    <p>F</p>
+                    <p>Tle</p>
+                    <p>GDJ7GSIL</p>
+                    <p>17</p>
+                    <p>0123456799</p>
+                    <p>Abidjan</p>
+                    <button type="button">Modifier</button>
+                    <button type="button">Supprimer</button>
+                </div>
+            </div>
+        </div>
+        <!-----------------------------------------Professeur  -->
+        <div class="professeur" id="page-professeur">
+            <div class="board-top">
+                <h1>Professeur <span>(2)</span></h1>
+                <div class="flex"><div class="plus" onclick="modal()">+</div>Nouveau Professeur</div>
+            </div>
+            <div class="tableau">
+                <div class="title row">
+                    <p>Nom</p>
+                    <p>Prénom</p>
+                    <p>Matiere</p>
+                    <p>Vacant</p>
+                    <p>Age</p>
+                    <p>Téléphone</p>
+                    <p>Ville</p>
+                    <p class="action">Actions</p>
+                </div>
+                <div class="row">
+                    <p>KOFFI</p>
+                    <p>George</p>
+                    <p>Math</p>
+                    <p>Non</p>
+                    <p>40</p>
+                    <p>0123456789</p>
+                    <p>Touba</p>
+                    <button type="button">Modifier</button>
+                    <button type="button">Supprimer</button>
+                </div>
+                <div class="row">
+                    <p>Konaté</p>
+                    <p>Sali</p>
+                    <p>Physique</p>
+                    <p>Oui</p>
+                    <p>37</p>
+                    <p>0123456799</p>
+                    <p>Abidjan</p>
+                    <button type="button">Modifier</button>
+                    <button type="button">Supprimer</button>
+                </div>
+            </div>
+        </div>
+        <div class="utilisateur" id="page-utilisateur">
+            <h1>Utilisateur</h1>
+            <div class="tableau">
+                <div class="title row">
+                    <p>Pseudo</p>
+                    <p>Date de création</p>
+                    <p>Actions</p>
+                </div>
+                <div class="row">
+                    <p>admin</p>
+                    <p>16/08/2024</p>
+                    <button type="button">Modifier</button>
+                </div>
+                <div class="row">
+                    <p>user2</p>
+                    <p>13/08/2024</p>
+                    <button type="button">Modifier</button>
+                </div>
+            </div>
+        </div>
+        <div class="rapport" id="page-rapport">
+            <h1>Rapport</h1>
+        </div>
+    </section>
+    <script src="js.js"></script>
+</body>
+</html>

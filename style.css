@@ -1,0 +1,150 @@
+*{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+section.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+}
+.login-form{
+    padding:2rem;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+.login-form h1{
+    margin-top: 0;
+}
+.login-form input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #000;
+    height: 20px;
+}
+label{
+    width: 100%;
+    text-align: left;
+    margin-top: 1rem;
+}
+.login-form h1{
+    width: 100%;
+    text-align: center;
+}
+.login-btn{
+    width: 100%;
+    margin: 1.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 25px;
+    font-weight: 600;
+    transition: ease-out 250ms;
+}
+.login-btn:hover{
+   background-color: #000;
+   color: #fff;
+   transition: ease-in 250ms;
+}
+#error-message{
+    color: red;
+    display: none;
+}
+.dashboard{
+    display: flex;
+    min-height: 100dvh;
+}
+.sidebar{
+    padding: 2rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #000;
+    
+}
+.eleve,.professeur,.utilisateur,.rapport{display: none;}
+.page-dash,.eleve,.professeur,.utilisateur,.rapport{
+    padding: 2rem;
+    width: 100%;
+}
+.page-dash h1{
+    width: 100%;
+    text-align: left;
+}
+.sidebar-link{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.sidebar-link.current{color: blue;}
+.sidebar-link-container{
+    padding: 1rem 0rem ;
+}
+.sidebar-link-container li{
+    list-style: none;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px; 
+    justify-items: center;
+}
+.card{
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid #000;
+    width: 90%;
+
+}
+.card h5{
+    margin-top: 0px;
+}
+.card h1{
+    text-align: center;
+    margin: 2rem 0;
+}
+.cercle{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border:2px solid #000;
+}
+.circle-container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.board-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plus{border-radius: 100%;border: 1px solid #000; display: flex; justify-content: center; width: 21px; height: 21px;padding-bottom: 3px;}
+.tableau{
+    border: 2px solid #000;
+    width: 100%;
+    min-height: 100px;
+
+}
+.tableau .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.5rem;
+}
+.tableau .row p{margin: 0;}
+.title.row{
+    background-color: rgb(181, 181, 181);
+}
+.flex{display: flex; align-items: center;}
+.row button{}
+.row p.action{ text-align: center; width: 200px!important;}
